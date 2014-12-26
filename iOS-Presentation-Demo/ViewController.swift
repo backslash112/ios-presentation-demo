@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func click(sender: AnyObject) {
+        let vc = SubViewController()
+        self .presentViewController(vc, animated: true, completion: nil)
+    }
 
 }
 

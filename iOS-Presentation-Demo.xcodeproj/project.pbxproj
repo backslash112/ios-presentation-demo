@@ -14,6 +14,8 @@
 		C33F5B891A4D0B9F00E14426 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33F5B871A4D0B9F00E14426 /* LaunchScreen.xib */; };
 		C33F5B951A4D0BA000E14426 /* iOS_Presentation_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F5B941A4D0BA000E14426 /* iOS_Presentation_DemoTests.swift */; };
 		C33F5BA11A4D0CE700E14426 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C33F5BA01A4D0CE700E14426 /* README.md */; };
+		C33F5BA31A4D0D7600E14426 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F5BA21A4D0D7600E14426 /* CustomPresentationController.swift */; };
+		C33F5BA51A4D285700E14426 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F5BA41A4D285700E14426 /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		C33F5B931A4D0BA000E14426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C33F5B941A4D0BA000E14426 /* iOS_Presentation_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Presentation_DemoTests.swift; sourceTree = "<group>"; };
 		C33F5BA01A4D0CE700E14426 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C33F5BA21A4D0D7600E14426 /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		C33F5BA41A4D285700E14426 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				C33F5B851A4D0B9F00E14426 /* Images.xcassets */,
 				C33F5B871A4D0B9F00E14426 /* LaunchScreen.xib */,
 				C33F5B7C1A4D0B9F00E14426 /* Supporting Files */,
+				C33F5BA21A4D0D7600E14426 /* CustomPresentationController.swift */,
+				C33F5BA41A4D285700E14426 /* SubViewController.swift */,
 			);
 			path = "iOS-Presentation-Demo";
 			sourceTree = "<group>";
@@ -215,7 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33F5BA31A4D0D7600E14426 /* CustomPresentationController.swift in Sources */,
 				C33F5BA11A4D0CE700E14426 /* README.md in Sources */,
+				C33F5BA51A4D285700E14426 /* SubViewController.swift in Sources */,
 				C33F5B811A4D0B9F00E14426 /* ViewController.swift in Sources */,
 				C33F5B7F1A4D0B9F00E14426 /* AppDelegate.swift in Sources */,
 			);
