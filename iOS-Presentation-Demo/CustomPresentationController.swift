@@ -11,15 +11,17 @@ import UIKit
 class CustomPresentationController: UIPresentationController {
  
     lazy var dimmingView: UIView = {
-        let view = UIView(frame: self.containerView!.frame)
-        view.backgroundColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.4)
-        view.alpha = 0.0
+        let view = UIView(frame: self.containerView!.bounds)
+        view.backgroundColor = UIColor.redColor().colorWithAlphaComponent(0.5)
+        view.alpha = 1.0
         return view
     }()
     
     
     override func presentationTransitionWillBegin() {
         self.dimmingView.frame = self.containerView.bounds
+        self.dimmingView.alpha = 0.0
+        
         self.containerView.addSubview(self.dimmingView)
         self.containerView.addSubview(self.presentedView())
         
@@ -47,6 +49,14 @@ class CustomPresentationController: UIPresentationController {
         var frame = self.containerView.bounds
         frame = CGRectInset(frame, 50.0, 50.0)
         return frame
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator transitionCoordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: transitionCoordinator)
+        
+        transitionCoordinator.animateAlongsideTransition({(context: UIViewControllerTransitionCoordinatorContext!) -> Void in
+            self.dimmingView.frame = self.containerView.bounds
+            }, completion:nil)
     }
     
 }

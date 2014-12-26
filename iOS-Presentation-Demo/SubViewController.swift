@@ -12,23 +12,26 @@ class SubViewController: UIViewController, UIViewControllerTransitioningDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let newView = UIView(frame: CGRect(x: 40, y: 40, width: 100, height: 100))
-        newView.backgroundColor = UIColor.redColor()
-        
-        let button = UIButton(frame: CGRectMake(0, 0, 80, 40))
-        button.setTitle("Click", forState: .Normal)
-        button.addTarget(self, action: Selector("click"), forControlEvents: UIControlEvents.TouchUpInside)
-        newView.addSubview(button)
-        self.view.addSubview(newView)
-        
-        self.commonInit()
+
+        // self.commonInit()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.commonInit()
+    }
+    
+//    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!)  {
+//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+//        
+//        self.commonInit()
+//    }
+
     
     func commonInit() {
         self.modalPresentationStyle = .Custom
@@ -47,6 +50,23 @@ class SubViewController: UIViewController, UIViewControllerTransitioningDelegate
     {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if presented  == self {
+            return CustomPresentationAnimationController(isPresenting: true)
+        } else {
+            return nil
+        }
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if dismissed == self {
+            return CustomPresentationAnimationController(isPresenting: false)
+        } else {
+            return nil
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

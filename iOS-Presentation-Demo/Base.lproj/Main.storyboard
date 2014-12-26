@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dU2-TT-MGS"/>
+                                    <segue destination="VdK-mc-lWJ" kind="modal" id="Unb-wT-bS8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -36,7 +36,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="1"/>
+            <point key="canvasLocation" x="683" y="0.99999999999999989"/>
+        </scene>
+        <!--Sub View Controller-->
+        <scene sceneID="5Do-cz-WvR">
+            <objects>
+                <viewController id="VdK-mc-lWJ" customClass="SubViewController" customModule="iOS_Presentation_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jRc-wN-dkM"/>
+                        <viewControllerLayoutGuide type="bottom" id="VTN-LF-dxx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rjR-KB-qC8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5a9-CC-Ycj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mh4-d4-yd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-38.813333333333333"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8QN-ya-kqf">
@@ -54,7 +73,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vyg-hG-FSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="1"/>
+            <point key="canvasLocation" x="151" y="0.99999999999999989"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
