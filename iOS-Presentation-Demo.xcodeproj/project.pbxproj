@@ -13,6 +13,7 @@
 		C33F5B861A4D0B9F00E14426 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33F5B851A4D0B9F00E14426 /* Images.xcassets */; };
 		C33F5B891A4D0B9F00E14426 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33F5B871A4D0B9F00E14426 /* LaunchScreen.xib */; };
 		C33F5B951A4D0BA000E14426 /* iOS_Presentation_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F5B941A4D0BA000E14426 /* iOS_Presentation_DemoTests.swift */; };
+		C33F5BA11A4D0CE700E14426 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C33F5BA01A4D0CE700E14426 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C33F5B8E1A4D0BA000E14426 /* iOS-Presentation-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Presentation-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33F5B931A4D0BA000E14426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C33F5B941A4D0BA000E14426 /* iOS_Presentation_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Presentation_DemoTests.swift; sourceTree = "<group>"; };
+		C33F5BA01A4D0CE700E14426 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		C33F5B701A4D0B9F00E14426 = {
 			isa = PBXGroup;
 			children = (
+				C33F5BA01A4D0CE700E14426 /* README.md */,
 				C33F5B7B1A4D0B9F00E14426 /* iOS-Presentation-Demo */,
 				C33F5B911A4D0BA000E14426 /* iOS-Presentation-DemoTests */,
 				C33F5B7A1A4D0B9F00E14426 /* Products */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33F5BA11A4D0CE700E14426 /* README.md in Sources */,
 				C33F5B811A4D0B9F00E14426 /* ViewController.swift in Sources */,
 				C33F5B7F1A4D0B9F00E14426 /* AppDelegate.swift in Sources */,
 			);
