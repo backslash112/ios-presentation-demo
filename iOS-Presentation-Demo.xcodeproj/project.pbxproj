@@ -90,11 +90,11 @@
 				C33F5B801A4D0B9F00E14426 /* ViewController.swift */,
 				C33F5BA41A4D285700E14426 /* SubViewController.swift */,
 				C33F5BA21A4D0D7600E14426 /* CustomPresentationController.swift */,
+				C33A16531A4D3F0800287512 /* CustomPresentationAnimationController.swift */,
 				C33F5B821A4D0B9F00E14426 /* Main.storyboard */,
 				C33F5B851A4D0B9F00E14426 /* Images.xcassets */,
 				C33F5B871A4D0B9F00E14426 /* LaunchScreen.xib */,
 				C33F5B7C1A4D0B9F00E14426 /* Supporting Files */,
-				C33A16531A4D3F0800287512 /* CustomPresentationAnimationController.swift */,
 			);
 			path = "iOS-Presentation-Demo";
 			sourceTree = "<group>";

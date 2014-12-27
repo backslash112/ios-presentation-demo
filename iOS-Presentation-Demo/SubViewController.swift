@@ -16,6 +16,9 @@ class SubViewController: UIViewController, UIViewControllerTransitioningDelegate
         // self.commonInit()
     }
 
+    @IBAction func closeButtonClick(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
