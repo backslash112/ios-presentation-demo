@@ -11,7 +11,7 @@ import UIKit
 class CustomPresentationAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     
     let isPresenting: Bool
-    let duration: NSTimeInterval = 0.5
+    let duration: NSTimeInterval = 0.4
    
     init(isPresenting: Bool) {
         self.isPresenting = isPresenting

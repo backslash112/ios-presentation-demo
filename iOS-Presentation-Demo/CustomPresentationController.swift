@@ -38,7 +38,11 @@ class CustomPresentationController: UIPresentationController {
     }
     
     override func dismissalTransitionWillBegin() {
-        
+        if let transitionCoordinator = self.presentingViewController.transitionCoordinator() {
+            transitionCoordinator.animateAlongsideTransition({ (context: UIViewControllerTransitionCoordinatorContext!) -> Void in
+                self.dimmingView.alpha = 0.0
+            }, completion: nil)
+        }
     }
     
     override func dismissalTransitionDidEnd(completed: Bool) {
@@ -47,16 +51,16 @@ class CustomPresentationController: UIPresentationController {
     
     override func frameOfPresentedViewInContainerView() -> CGRect {
         var frame = self.containerView.bounds
-        frame = CGRectInset(frame, 50.0, 50.0)
+        frame = CGRectInset(frame, 50.0, 150.0)
         return frame
     }
     
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator transitionCoordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransitionToSize(size, withTransitionCoordinator: transitionCoordinator)
-        
-        transitionCoordinator.animateAlongsideTransition({(context: UIViewControllerTransitionCoordinatorContext!) -> Void in
-            self.dimmingView.frame = self.containerView.bounds
-            }, completion:nil)
-    }
+//    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator transitionCoordinator: UIViewControllerTransitionCoordinator) {
+//        super.viewWillTransitionToSize(size, withTransitionCoordinator: transitionCoordinator)
+//        
+//        transitionCoordinator.animateAlongsideTransition({(context: UIViewControllerTransitionCoordinatorContext!) -> Void in
+//            self.dimmingView.frame = self.containerView.bounds
+//            }, completion:nil)
+//    }
     
 }

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6490DCED1A4E8D3E00C01BBA /* IMG_2218.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6490DCEC1A4E8D3E00C01BBA /* IMG_2218.JPG */; };
 		C33A16541A4D3F0800287512 /* CustomPresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A16531A4D3F0800287512 /* CustomPresentationAnimationController.swift */; };
 		C33F5B7F1A4D0B9F00E14426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F5B7E1A4D0B9F00E14426 /* AppDelegate.swift */; };
 		C33F5B811A4D0B9F00E14426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F5B801A4D0B9F00E14426 /* ViewController.swift */; };
 		C33F5B841A4D0B9F00E14426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33F5B821A4D0B9F00E14426 /* Main.storyboard */; };
-		C33F5B861A4D0B9F00E14426 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33F5B851A4D0B9F00E14426 /* Images.xcassets */; };
 		C33F5B891A4D0B9F00E14426 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33F5B871A4D0B9F00E14426 /* LaunchScreen.xib */; };
 		C33F5B951A4D0BA000E14426 /* iOS_Presentation_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F5B941A4D0BA000E14426 /* iOS_Presentation_DemoTests.swift */; };
 		C33F5BA11A4D0CE700E14426 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C33F5BA01A4D0CE700E14426 /* README.md */; };
@@ -30,13 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6490DCEC1A4E8D3E00C01BBA /* IMG_2218.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2218.JPG; sourceTree = "<group>"; };
 		C33A16531A4D3F0800287512 /* CustomPresentationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationAnimationController.swift; sourceTree = "<group>"; };
 		C33F5B791A4D0B9F00E14426 /* iOS-Presentation-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Presentation-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33F5B7D1A4D0B9F00E14426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C33F5B7E1A4D0B9F00E14426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C33F5B801A4D0B9F00E14426 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C33F5B831A4D0B9F00E14426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C33F5B851A4D0B9F00E14426 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C33F5B881A4D0B9F00E14426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C33F5B8E1A4D0BA000E14426 /* iOS-Presentation-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Presentation-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33F5B931A4D0BA000E14426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +67,7 @@
 		C33F5B701A4D0B9F00E14426 = {
 			isa = PBXGroup;
 			children = (
+				6490DCEC1A4E8D3E00C01BBA /* IMG_2218.JPG */,
 				C33F5BA01A4D0CE700E14426 /* README.md */,
 				C33F5B7B1A4D0B9F00E14426 /* iOS-Presentation-Demo */,
 				C33F5B911A4D0BA000E14426 /* iOS-Presentation-DemoTests */,
@@ -92,7 +93,6 @@
 				C33F5BA21A4D0D7600E14426 /* CustomPresentationController.swift */,
 				C33A16531A4D3F0800287512 /* CustomPresentationAnimationController.swift */,
 				C33F5B821A4D0B9F00E14426 /* Main.storyboard */,
-				C33F5B851A4D0B9F00E14426 /* Images.xcassets */,
 				C33F5B871A4D0B9F00E14426 /* LaunchScreen.xib */,
 				C33F5B7C1A4D0B9F00E14426 /* Supporting Files */,
 			);
@@ -206,7 +206,7 @@
 			files = (
 				C33F5B841A4D0B9F00E14426 /* Main.storyboard in Resources */,
 				C33F5B891A4D0B9F00E14426 /* LaunchScreen.xib in Resources */,
-				C33F5B861A4D0B9F00E14426 /* Images.xcassets in Resources */,
+				6490DCED1A4E8D3E00C01BBA /* IMG_2218.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

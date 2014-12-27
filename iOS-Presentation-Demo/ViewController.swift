@@ -19,6 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+//    @IBAction func dismiss(segue: UIStoryboard) {
+//        self.dismissViewControllerAnimated(true, completion: nil)
+//    }
+    
+    @IBAction func dismiss(segue: UIStoryboardSegue) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
 
